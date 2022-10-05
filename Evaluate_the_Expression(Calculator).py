@@ -1,1 +1,2 @@
-print(eval(input()))
+s=input()
+print(eval(s))
