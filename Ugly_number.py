@@ -1,13 +1,11 @@
-n=int(input())
-while n!=1:
-    if n%5==0:
-        n=n//5
-    elif n%3==0:
-        n=n//3
-    elif n%2==0:
-        n=n//2
-    else:
-        print('Not Ugly Number')
-        break
+a=int(input())
+f=0
+for i in range(a):
+    for j in range(a):
+        for k in range(a):
+            if (a==(2**i)*(3**j)*(5**k)):
+                f=1
+if(f==1):
+    print("Ugly Number")
 else:
-    print('Ugly Number')
+     print("Not Ugly Number")
